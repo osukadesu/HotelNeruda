@@ -9,9 +9,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { ClienteConsultaComponent } from './hotel/cliente-consulta/cliente-consulta.component';
-import { ClienteRegistroComponent } from './hotel/cliente-registro/cliente-registro.component';
-import { GestionClienteComponent } from './hotel/gestion-cliente/gestion-cliente.component';
 import { ClienteGestionComponent } from './hotel/cliente/cliente-gestion/cliente-gestion.component';
 import { EmpleadoRegistroComponent } from './hotel/empleado/empleado-registro/empleado-registro.component';
 import { EmpleadoConsultaComponent } from './hotel/empleado/empleado-consulta/empleado-consulta.component';
@@ -26,8 +23,6 @@ import { AdministracionComponent } from './hotel/administracion/administracion.c
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
-import { FooteComponent } from './foote/foote.component';
-import { ClienteComponent } from './cliente/cliente.component';
 import { ClientewebConsultaComponent } from './clienteweb/clienteweb-consulta/clienteweb-consulta.component';
 import { ClientewebRegistroComponent } from './clienteweb/clienteweb-registro/clienteweb-registro.component';
 import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clienteweb-gestion.component';
@@ -39,9 +34,6 @@ import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clie
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ClienteConsultaComponent,
-    ClienteRegistroComponent,
-    GestionClienteComponent,
     ClienteGestionComponent,
     EmpleadoRegistroComponent,
     EmpleadoConsultaComponent,
@@ -55,8 +47,6 @@ import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clie
     AdministracionComponent,
     LoginComponent,
     FooterComponent,
-    FooteComponent,
-    ClienteComponent,
     ClientewebConsultaComponent,
     ClientewebRegistroComponent,
     ClientewebGestionComponent
