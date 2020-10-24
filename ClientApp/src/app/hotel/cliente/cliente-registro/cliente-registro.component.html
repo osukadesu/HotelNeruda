@@ -5,29 +5,38 @@
 <div id="divcontainer" class="forms">
     <form id="formularioRegistro">
         <label>Cedula</label>
-        <input type="text" id="cedula" name="cedula"    placeholder="Cedula">
+        <input type="text" id="cedula" name="cedula" [(ngModel)]="cliente.cedula"
+         placeholder="Cedula">
         <label >Primer Nombre</label>
-        <input type="text" id="primerNombre" name="primerNombre"  placeholder="Primer Nombre">
+        <input type="text" id="primerNombre" name="primerNombre" [(ngModel)]="cliente.primerNombre"
+        placeholder="Primer Nombre">
         <label >Segundo Nombre</label>
-        <input type="text" id="segunoNombre" name="segunoNombre"  placeholder="Segundo Nombre">
+        <input type="text" id="segunoNombre" name="segunoNombre" [(ngModel)]="cliente.segunoNombre"
+        placeholder="Segundo Nombre">
         <label >Primer Apellido</label>
-        <input type="text" id="primerApellido" name="primerApellido"  placeholder="Primer Apellido">
+        <input type="text" id="primerApellido" name="primerApellido" [(ngModel)]="cliente.primerApellido"
+        placeholder="Primer Apellido">
         <label >Segundo Apellido</label>
-        <input type="text" id="segundoApellido" name="segundoApellido"  placeholder="Segundo Apellido">
+        <input type="text" id="segundoApellido" name="segundoApellido" [(ngModel)]="cliente.segundoApellido"
+         placeholder="Segundo Apellido">
         <label >Sexo</label>
-        <select id="sexo" name="sexo" >
+        <select id="sexo" name="sexo" [(ngModel)]="cliente.sexo">
             <option value="seleccionar">Seleccionar</option>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
         </select> <br>
         <label >Edad</label><br>
-        <input type="number" id="edad" name="edad"  placeholder="Edad"><br>
+        <input type="number" id="edad" name="edad" [(ngModel)]="cliente.edad"
+        placeholder="Edad"><br>
         <label >Telefono</label><br>
-        <input type="number" id="telefono" name="telefono"  placeholder="Telefono"><br>
+        <input type="number" id="telefono" name="telefono"  [(ngModel)]="cliente.telefono"
+        placeholder="Telefono"><br>
         <label >Departamento</label>
-        <input type="text" id="departamento" name="departamento"  placeholder="Departamento"><br>
+        <input type="text" id="departamento" name="departamento" [(ngModel)]="cliente.departamento"  
+        placeholder="Departamento"><br>
         <label >Ciudad</label>
-        <input type="text" id="ciudad" name="ciudad"  placeholder="Ciudad">
+        <input type="text" id="ciudad" name="ciudad" [(ngModel)]="cliente.ciudad" 
+        placeholder="Ciudad">
     </form>
 </div>
 <br>
