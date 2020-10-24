@@ -17,6 +17,7 @@ import { HabitacionGestionComponent } from './hotel/habitacion/habitacion-gestio
 import { EmpleadoConsultaComponent } from './hotel/empleado/empleado-consulta/empleado-consulta.component';
 import { HabitacionConsultaComponent } from './hotel/habitacion/habitacion-consulta/habitacion-consulta.component';
 import { FacturaConsultaComponent } from './hotel/factura/factura-consulta/factura-consulta.component';
+import { RegistroComponent } from './login/registro/registro.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'facturaconsulta', component: FacturaConsultaComponent },
   { path: 'empleadoregistro', component: EmpleadoRegistroComponent },
   { path: 'empleadoconsulta', component: EmpleadoConsultaComponent },
+  { path: 'registro', component: RegistroComponent },
   { path: '', component: HomeComponent}
 ];
 

@@ -26,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ClientewebConsultaComponent } from './clienteweb/clienteweb-consulta/clienteweb-consulta.component';
 import { ClientewebRegistroComponent } from './clienteweb/clienteweb-registro/clienteweb-registro.component';
 import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clienteweb-gestion.component';
+import { RegistroComponent } from './login/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clie
     FooterComponent,
     ClientewebConsultaComponent,
     ClientewebRegistroComponent,
-    ClientewebGestionComponent
+    ClientewebGestionComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
