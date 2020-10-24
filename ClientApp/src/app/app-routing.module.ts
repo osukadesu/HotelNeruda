@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'facturaconsulta', component: FacturaConsultaComponent },
   { path: 'empleadoregistro', component: EmpleadoRegistroComponent },
   { path: 'empleadoconsulta', component: EmpleadoConsultaComponent },
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent}
 ];
 
 @NgModule({
