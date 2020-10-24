@@ -14,6 +14,9 @@ import { ClienteGestionComponent } from './hotel/cliente/cliente-gestion/cliente
 import { EmpleadoGestionComponent } from './hotel/empleado/empleado-gestion/empleado-gestion.component';
 import { FacturaGestionComponent } from './hotel/factura/factura-gestion/factura-gestion.component';
 import { HabitacionGestionComponent } from './hotel/habitacion/habitacion-gestion/habitacion-gestion.component';
+import { EmpleadoConsultaComponent } from './hotel/empleado/empleado-consulta/empleado-consulta.component';
+import { HabitacionConsultaComponent } from './hotel/habitacion/habitacion-consulta/habitacion-consulta.component';
+import { FacturaConsultaComponent } from './hotel/factura/factura-consulta/factura-consulta.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,8 +29,11 @@ const routes: Routes = [
   { path: 'gestionfactura', component: FacturaGestionComponent },
   { path: 'gestionhabitacion', component: HabitacionGestionComponent },
   { path: 'habitacionregistro', component: HabitacionRegistroComponent },
+  { path: 'habitacionconsulta', component: HabitacionConsultaComponent },
   { path: 'facturaregistro', component: FacturaRegistroComponent },
+  { path: 'facturaconsulta', component: FacturaConsultaComponent },
   { path: 'empleadoregistro', component: EmpleadoRegistroComponent },
+  { path: 'empleadoconsulta', component: EmpleadoConsultaComponent },
   { path: '', component: HomeComponent }
 ];
 
