@@ -1,15 +1,13 @@
-export class Empleado {
+export class Cliente {
     cedula: string;
     primerNombre: string;
     segundoNombre: string;
     primerApellido: string;
     segundoApellido: string;
     sexo: string;
-    edad: number;
-    telefono: number;
+    edad: string;
     email: string;
+    telefono: number;
     departamento: string;
     ciudad: string;
-    cargo : string;
-    jornada: string;
 }

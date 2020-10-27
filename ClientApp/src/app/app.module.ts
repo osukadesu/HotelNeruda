@@ -27,6 +27,7 @@ import { ClientewebConsultaComponent } from './clienteweb/clienteweb-consulta/cl
 import { ClientewebRegistroComponent } from './clienteweb/clienteweb-registro/clienteweb-registro.component';
 import { ClientewebGestionComponent } from './clienteweb/clienteweb-gestion/clienteweb-gestion.component';
 import { RegistroComponent } from './login/registro/registro.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { RegistroComponent } from './login/registro/registro.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
+    CommonModule,
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },

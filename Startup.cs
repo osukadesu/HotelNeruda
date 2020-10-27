@@ -1,10 +1,14 @@
+using System;
+using Datos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
 namespace hotelneruda
 {
@@ -22,6 +26,32 @@ namespace hotelneruda
         {
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
+            services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "School API",
+        Description = "School API - ASP.NET Core Web API",
+        TermsOfService = new Uri("https://cla.dotnetfoundation.org/"),
+        Contact = new OpenApiContact
+        {
+            Name = "Unicesar",
+            Email = string.Empty,
+            Url = new Uri("https://github.com/borisgr04/CrudNgDotNetCore3"),
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Licencia dotnet foundation",
+            Url = new Uri("https://www.byasystems.co/license"),
+        }
+    });
+});
+
+            //contextos base de datos
+            string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
+            services.AddDbContext<HotelContext>(Context => Context.UseSqlServer(connectionString));
+
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";

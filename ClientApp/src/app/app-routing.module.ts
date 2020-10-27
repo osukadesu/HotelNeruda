@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
 import { ClienteRegistroComponent } from './hotel/cliente/cliente-registro/cliente-registro.component';
 import { ClienteConsultaComponent } from './hotel/cliente/cliente-consulta/cliente-consulta.component';
 import { AdministracionComponent } from './hotel/administracion/administracion.component';
@@ -18,6 +16,8 @@ import { EmpleadoConsultaComponent } from './hotel/empleado/empleado-consulta/em
 import { HabitacionConsultaComponent } from './hotel/habitacion/habitacion-consulta/habitacion-consulta.component';
 import { FacturaConsultaComponent } from './hotel/factura/factura-consulta/factura-consulta.component';
 import { RegistroComponent } from './login/registro/registro.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -45,6 +45,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     RouterModule.forRoot(routes)
-  ]
+  ],
+  exports:[RouterModule]
 })
 export class AppRoutingModule { }
